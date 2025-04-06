@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"moni1_key_led\startup_stm32g431xx.o"
+"moni1_key_led\main.o"
+"moni1_key_led\gpio.o"
+"moni1_key_led\stm32g4xx_it.o"
+"moni1_key_led\stm32g4xx_hal_msp.o"
+"moni1_key_led\stm32g4xx_hal_tim.o"
+"moni1_key_led\stm32g4xx_hal_tim_ex.o"
+"moni1_key_led\stm32g4xx_hal_pwr_ex.o"
+"moni1_key_led\stm32g4xx_hal.o"
+"moni1_key_led\stm32g4xx_hal_rcc.o"
+"moni1_key_led\stm32g4xx_hal_rcc_ex.o"
+"moni1_key_led\stm32g4xx_hal_flash.o"
+"moni1_key_led\stm32g4xx_hal_flash_ex.o"
+"moni1_key_led\stm32g4xx_hal_flash_ramfunc.o"
+"moni1_key_led\stm32g4xx_hal_gpio.o"
+"moni1_key_led\stm32g4xx_hal_exti.o"
+"moni1_key_led\stm32g4xx_hal_dma.o"
+"moni1_key_led\stm32g4xx_hal_dma_ex.o"
+"moni1_key_led\stm32g4xx_hal_pwr.o"
+"moni1_key_led\stm32g4xx_hal_cortex.o"
+"moni1_key_led\system_stm32g4xx.o"
+--strict --scatter "Moni1_Key_LED\Moni1_Key_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Moni1_Key_LED.map" -o Moni1_Key_LED\Moni1_Key_LED.axf

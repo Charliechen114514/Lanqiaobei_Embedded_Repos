@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"lcd_demo\startup_stm32g431xx.o"
+"lcd_demo\main.o"
+"lcd_demo\gpio.o"
+"lcd_demo\stm32g4xx_it.o"
+"lcd_demo\stm32g4xx_hal_msp.o"
+"lcd_demo\lcd.o"
+"lcd_demo\stm32g4xx_hal_tim.o"
+"lcd_demo\stm32g4xx_hal_tim_ex.o"
+"lcd_demo\stm32g4xx_hal_pwr_ex.o"
+"lcd_demo\stm32g4xx_hal.o"
+"lcd_demo\stm32g4xx_hal_rcc.o"
+"lcd_demo\stm32g4xx_hal_rcc_ex.o"
+"lcd_demo\stm32g4xx_hal_flash.o"
+"lcd_demo\stm32g4xx_hal_flash_ex.o"
+"lcd_demo\stm32g4xx_hal_flash_ramfunc.o"
+"lcd_demo\stm32g4xx_hal_gpio.o"
+"lcd_demo\stm32g4xx_hal_exti.o"
+"lcd_demo\stm32g4xx_hal_dma.o"
+"lcd_demo\stm32g4xx_hal_dma_ex.o"
+"lcd_demo\stm32g4xx_hal_pwr.o"
+"lcd_demo\stm32g4xx_hal_cortex.o"
+"lcd_demo\system_stm32g4xx.o"
+--strict --scatter "LCD_demo\LCD_demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_demo.map" -o LCD_demo\LCD_demo.axf
